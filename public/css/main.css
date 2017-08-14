@@ -8,6 +8,8 @@ html,body {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .index-top-bar {
@@ -52,4 +54,31 @@ html,body {
 .el-dropdown-link {
     color: #fff!important;
     cursor: pointer;
+}
+
+/**
+* 主体部分
+*/
+.index-main-body {
+    flex: 1;
+}
+
+#left_nav {
+    float: left;
+    width: 15%;
+    background-color: #333;
+    position: relative;
+    height: 100%;
+}
+
+/**
+* 底部样式
+*/
+.index-footer {
+    background-color: #333;
+    padding: 10px 15px;
+}
+
+.index-footer span {
+    color: #fff;
 }

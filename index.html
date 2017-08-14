@@ -10,6 +10,8 @@
 </head>
 <body>
     <section class="index-wrap">
+
+        <!--头部-->
         <header class="index-top-bar clearfix">
             <img src="public/images/logo.png" alt="logo" class="index-top-img">
             <div class="index-top-app-switch" id="top_app">
@@ -27,6 +29,45 @@
                 <a href="">退出</a>
             </div>
         </header>
+        <!--/头部-->
+
+        <!--主体内容-->
+        <section class="index-main-body">
+
+            <!--左侧导航-->
+            <nav id="left_nav" class="clearfix">
+                <el-col :span="24">
+                    <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+                        <el-submenu index="1">
+                            <template slot="title"><i class="el-icon-message"></i>导航一</template>
+                            <el-menu-item-group>
+                                <template slot="title">分组一</template>
+                                <el-menu-item index="1-1">选项1</el-menu-item>
+                                <el-menu-item index="1-2">选项2</el-menu-item>
+                            </el-menu-item-group>
+                            <el-menu-item-group title="分组2">
+                                <el-menu-item index="1-3">选项3</el-menu-item>
+                            </el-menu-item-group>
+                            <el-submenu index="1-4">
+                                <template slot="title">选项4</template>
+                                <el-menu-item index="1-4-1">选项1</el-menu-item>
+                            </el-submenu>
+                        </el-submenu>
+                        <el-menu-item index="2"><i class="el-icon-menu"></i>导航二</el-menu-item>
+                        <el-menu-item index="3"><i class="el-icon-setting"></i>导航三</el-menu-item>
+                    </el-menu>
+                </el-col>
+            </nav>
+            <!--/左侧导航-->
+
+        </section>
+        <!--/主体内容-->
+
+        <!--底部-->
+        <footer class="index-footer">
+            <span>CopyRight &copy; 2017 Sennki All Rights Reserved</span>
+        </footer>
+        <!--/底部-->
     </section>
 </body>
 <!--js后面引入-->

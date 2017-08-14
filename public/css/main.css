@@ -2,3 +2,54 @@ html,body {
     width: 100%;
     height: 100%;
 }
+
+/*框架样式*/
+.index-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.index-top-bar {
+    background-color: #333;
+    padding: 10px 15px;
+}
+
+.index-top-img {
+    float: left;
+    width: 30px;
+}
+
+.index-top-login-info {
+    float: right;
+}
+
+.index-top-login-info span {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.index-top-login-info a {
+    color: #fff;
+}
+
+.index-top-login-info a:hover,.index-top-login-info a:visited,.index-top-login-info a:focus {
+    text-decoration: none;
+}
+
+.index-top-login-info a:hover {
+    color: #1ccca9;
+}
+
+.index-top-app-switch {
+    float: left;
+    margin-left: 50px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.el-dropdown-link {
+    color: #fff!important;
+    cursor: pointer;
+}

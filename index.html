@@ -2,19 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="public/build/Element%20UI/index.css">
     <link rel="stylesheet" href="public/build/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="icon" href="https://www.xiashantown.cn/images/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/main.css">
     <title>第一声后台管理</title>
 </head>
 <body>
     <section class="index-wrap">
-
+        <header class="index-top-bar clearfix">
+            <img src="public/images/logo.png" alt="logo" class="index-top-img">
+            <div class="index-top-app-switch" id="top_app">
+                <el-dropdown @command="changeApp">
+                    <span class="el-dropdown-link">
+                        {{apps[current].name}}<i class="el-icon-caret-bottom el-icon--right"></i>
+                    </span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item v-for="(app, index) in apps" :command="index" :key="app.id" :index="index">{{app.name}}</el-dropdown-item>
+                    </el-dropdown-menu>
+                </el-dropdown>
+            </div>
+            <div class="index-top-login-info">
+                <span>欢迎您！<em>小明同学</em></span>
+                <a href="">退出</a>
+            </div>
+        </header>
     </section>
 </body>
 <!--js后面引入-->
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="public/build/vue/vue.js"></script>
+<script src="public/build/vue/vue-router.js"></script>
+<script src="public/build/Element%20UI/index.js"></script>
 <script src="public/js/main.js"></script>
 </html>

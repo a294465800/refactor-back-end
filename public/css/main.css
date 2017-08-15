@@ -74,7 +74,7 @@ html,body {
 .index-content-wrap {
     float: left;
     width: 85%;
-    padding: 20px;
+    padding: 20px 20px 100px;
     background-color: #fff;
     height: 100%;
     box-sizing: border-box;
@@ -94,6 +94,15 @@ html,body {
     width: 100px;
 }
 
+/*分页*/
+.index-page {
+    position: absolute;
+    width: 100%;
+    right: 20px;
+    bottom: 20px;
+    text-align: right;
+}
+
 /**
 * 底部样式
 */
@@ -104,4 +113,11 @@ html,body {
 
 .index-footer span {
     color: #fff;
+}
+
+/*
+* 用户列表
+*/
+.user-list-wrap {
+    clear: both;
 }

@@ -61,10 +61,10 @@ html,body {
 */
 .index-main-body {
     flex: 1;
+    display: flex;
 }
 
 #left_nav {
-    float: left;
     width: 15%;
     background-color: #333;
     position: relative;
@@ -72,7 +72,6 @@ html,body {
 }
 
 .index-content-wrap {
-    float: left;
     width: 85%;
     padding: 20px 20px 100px;
     background-color: #fff;
@@ -120,4 +119,96 @@ html,body {
 */
 .user-list-wrap {
     clear: both;
+}
+
+/*
+*审核
+*/
+.check-btns {
+    width: 700px;
+    margin: 30px auto 20px;
+}
+
+.check-list-body {
+    width: 700px;
+    margin: auto;
+}
+
+.check-list-item {
+    border: 1px solid #1ccca9;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.check-item-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.check-item-username {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.check-item-createTime {
+    color: #666;
+    font-size: 14px;
+}
+
+.check-item-content {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.check-item-img-groups {
+    width: 100%;
+}
+
+.check-item-img-groups-img {
+    width: 130px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #ececec;
+}
+
+.check-item-operate {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.check-pass,.check-reject {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.check-item-check {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #1ccca9;
+    font-size: 16px;
+}
+
+.check-money {
+    font-size: 30px;
+    color: #1ccca9;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    bottom:20px;
+    width: 30px;
+    height: 30px;
 }
